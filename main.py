@@ -67,6 +67,7 @@ def main():
     iv = cbc.generate_iv()
     encrypted_sms = cbc.encrypt(sms_message, feal_key, iv)
     print("   SMS encrypted successfully")
+    print("   The encrypted massage is: ",encrypted_sms)
 
     # Alice signs the encrypted SMS
     print("6. Signing encrypted SMS using Schnorr signature...")
